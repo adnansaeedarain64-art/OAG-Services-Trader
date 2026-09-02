@@ -1,217 +1,542 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>0
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OAG Services & Traders | Products</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+  <title>OAG Services & Traders | Home</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .home-hero {
+      background: linear-gradient(135deg, #071a2f, #0d3558, #0b6075);
+      color: white;
+      padding: 85px 25px;
+      text-align: center;
+      border-radius: 0 0 35px 35px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+    }
+
+    .home-hero h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    .home-hero h2 {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 22px;
+      color: #d9f7ff;
+    }
+
+    .home-hero p {
+      max-width: 800px;
+      margin: 0 auto 30px;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #eefaff;
+    }
+
+    .home-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .home-btn {
+      display: inline-block;
+      padding: 13px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .home-btn.primary {
+      background: white;
+      color: #073451;
+    }
+
+    .home-btn.primary:hover {
+      transform: translateY(-3px);
+    }
+
+    .home-btn.whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    .home-btn.whatsapp:hover {
+      transform: translateY(-3px);
+      background: #1ebe5d;
+    }
+
+    .welcome-box {
+      max-width: 1000px;
+      margin: 55px auto 20px;
+      padding: 35px 30px;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .welcome-box h2 {
+      color: #073451;
+      margin-bottom: 15px;
+      font-size: 30px;
+    }
+
+    .welcome-box p {
+      color: #555;
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-heading h2 {
+      color: #073451;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .section-heading p {
+      color: #666;
+      max-width: 750px;
+      margin: auto;
+      line-height: 1.7;
+    }
+
+    .home-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .home-card {
+      background: white;
+      padding: 28px 22px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+      transition: 0.3s;
+    }
+
+    .home-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .home-card .icon {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .home-card h3 {
+      color: #073451;
+      margin-bottom: 10px;
+    }
+
+    .home-card p {
+      color: #666;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .about-home {
+      background: #f3f8fb;
+      padding: 55px 20px;
+      margin-top: 55px;
+    }
+
+    .about-content {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-content h2 {
+      color: #073451;
+      font-size: 30px;
+      margin-bottom: 18px;
+    }
+
+    .about-content p {
+      color: #555;
+      line-height: 1.9;
+      font-size: 16px;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .why-item {
+      background: white;
+      padding: 22px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+
+    .why-item strong {
+      color: #073451;
+      font-size: 17px;
+    }
+
+    .why-item p {
+      color: #666;
+      margin: 8px 0 0;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .final-cta {
+      margin-top: 55px;
+      padding: 55px 20px;
+      background: linear-gradient(135deg, #073451, #0b6075);
+      color: white;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .final-cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      line-height: 1.7;
+      color: #e9faff;
+    }
+
+    @media (max-width: 900px) {
+      .home-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .home-hero {
+        padding: 60px 18px;
+      }
+
+      .home-hero h1 {
+        font-size: 30px;
+      }
+
+      .home-hero h2 {
+        font-size: 18px;
+      }
+
+      .home-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .welcome-box h2,
+      .section-heading h2,
+      .about-content h2,
+      .final-cta h2 {
+        font-size: 25px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="top">
-  <div class="container">
-    <span>Industrial Supply • Engineering • Maintenance • Manpower</span>
-    <span>oagsat@gmail.com | 0307-3284606 | 0301-7614607</span>
-  </div>
-</div>
+  <!-- HEADER -->
+  <header class="top">
+    <div class="container nav">
 
-<nav class="nav">
-  <div class="container">
+      <a href="index.html" class="brand">
+        <div class="logo">OAG</div>
+        <div>
+          <strong>OAG Services & Traders</strong>
+          <small>Industrial Supply & Services</small>
+        </div>
+      </a>
 
-    <a class="brand" href="index.html">
-      <div class="logo">OAG</div>
-      <span>OAG Services & Traders</span>
-    </a>
-
-    <button class="menu" aria-label="Menu">☰</button>
-
-    <div class="links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a class="active" href="products.html">Products</a>
-      <a href="services.html">Services</a>
-      <a href="experience.html">Experience</a>
-      <a href="clients.html">Clients</a>
-      <a href="contact.html">Contact</a>
-    </div>
-
-  </div>
-</nav>
-
-<section class="pagehero">
-  <div class="container">
-    <h1>Our Products</h1>
-    <p>
-      Quality industrial, safety, electrical, mechanical and general
-      supplies for professional and industrial requirements.
-    </p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-
-    <div class="section-title">
-      <small>OAG Product Range</small>
-      <h2>Industrial & Safety Products</h2>
-      <p>
-        We supply a wide range of industrial products and safety equipment.
-      </p>
-    </div>
-
-    <div class="grid3">
-
-      <div class="card">
-        <img src="images/helmets.jpg" alt="Safety Helmets">
-        <h3>Safety Helmets</h3>
-        <p>
-          Industrial safety helmets for construction, factories,
-          engineering and workplace protection.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="images/gloves.jpg" alt="Safety Gloves">
-        <h3>Safety Gloves</h3>
-        <p>
-          Protective gloves suitable for industrial, mechanical,
-          construction and general workplace applications.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="images/jackets.jpg" alt="Reflective Safety Jackets">
-        <h3>Reflective Jackets</h3>
-        <p>
-          High-visibility reflective jackets for industrial,
-          road, construction and site safety.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="images/harness.jpg" alt="Safety Harness">
-        <h3>Safety Harnesses</h3>
-        <p>
-          Safety harness equipment for working at height and
-          industrial protection requirements.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="images/fire-extinguisher.jpg" alt="Fire Extinguishers">
-        <h3>Fire Extinguishers</h3>
-        <p>
-          Fire protection equipment for industrial, commercial
-          and workplace safety applications.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="images/goggles.jpg" alt="Safety Goggles and Face Shields">
-        <h3>Goggles & Face Shields</h3>
-        <p>
-          Eye and face protection equipment for industrial,
-          welding and workplace safety.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="images/electrical.jpg" alt="Electrical Products">
-        <h3>Electrical Products</h3>
-        <p>
-          Electrical components, cables, breakers, motors,
-          switches and related industrial equipment.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="images/mechanical.jpg" alt="Mechanical Products">
-        <h3>Mechanical Products</h3>
-        <p>
-          Pumps, valves, bearings, seals, flanges, shafts,
-          gears and mechanical components.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="images/industrial.jpg" alt="Industrial Products">
-        <h3>Industrial Supplies</h3>
-        <p>
-          A wide range of industrial supplies and equipment
-          according to customer requirements.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section class="section alt">
-  <div class="container">
-
-    <div class="section-title">
-      <small>Need Something?</small>
-      <h2>Looking for a specific product?</h2>
-      <p>
-        Contact OAG Services & Traders for product availability,
-        specifications and quotations.
-      </p>
-    </div>
-
-    <div style="text-align:center;">
-      <a class="btn primary" href="contact.html">Contact OAG</a>
-    </div>
-
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-
-    <div class="footgrid">
-
-      <div>
-        <h4>OAG Services & Traders</h4>
-        <p>
-          General order supplier and industrial service provider
-          serving customers across Pakistan.
-        </p>
-      </div>
-
-      <div>
-        <h4>Quick Links</h4>
+      <nav class="links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="products.html">Products</a>
         <a href="services.html">Services</a>
+        <a href="experience.html">Experience</a>
         <a href="clients.html">Clients</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HERO / WELCOME -->
+  <section class="home-hero">
+
+    <h1>Welcome to OAG Services & Traders</h1>
+
+    <h2>Your Trusted Industrial Supply Partner</h2>
+
+    <p>
+      We are pleased to welcome you to OAG Services & Traders.
+      Your trust is the foundation of our work, and our commitment is
+      to provide quality products, dependable services and professional
+      solutions for your industrial needs.
+    </p>
+
+    <div class="home-buttons">
+
+      <a href="products.html" class="home-btn primary">
+        Explore Our Products
+      </a>
+
+      <a
+        href="https://wa.me/923073284606?text=Assalam-o-Alaikum%2C%20I%20visited%20the%20OAG%20Services%20%26%20Traders%20website%20and%20would%20like%20to%20know%20more%20about%20your%20products%20and%20services."
+        class="home-btn whatsapp"
+        target="_blank">
+        WhatsApp Enquiry
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- WELCOME MESSAGE -->
+  <section class="container">
+
+    <div class="welcome-box">
+
+      <h2>🤝 A Warm Welcome to OAG</h2>
+
+      <p>
+        At OAG Services & Traders, we believe that every successful
+        business relationship begins with trust, quality and commitment.
+        We are dedicated to serving our customers with reliable industrial
+        products and professional services.
+      </p>
+
+      <p>
+        Whether you need safety equipment, industrial supplies,
+        electrical products, mechanical products or other solutions,
+        our team is here to support you with honesty, responsibility
+        and dependable service.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- OUR STRENGTHS -->
+  <section class="container" style="padding:55px 20px;">
+
+    <div class="section-heading">
+
+      <h2>What We Offer</h2>
+
+      <p>
+        Professional solutions and dependable support designed
+        to meet the requirements of modern industries.
+      </p>
+
+    </div>
+
+
+    <div class="home-cards">
+
+      <div class="home-card">
+        <div class="icon">🦺</div>
+        <h3>Safety Products</h3>
+        <p>
+          Quality safety equipment to help create a safer
+          and more protected working environment.
+        </p>
+      </div>
+
+      <div class="home-card">
+        <div class="icon">⚙️</div>
+        <h3>Industrial Supplies</h3>
+        <p>
+          Reliable industrial products and supplies for
+          different workplace and operational requirements.
+        </p>
+      </div>
+
+      <div class="home-card">
+        <div class="icon">🔧</div>
+        <h3>Engineering Solutions</h3>
+        <p>
+          Practical electrical, mechanical and engineering
+          solutions for industrial applications.
+        </p>
+      </div>
+
+      <div class="home-card">
+        <div class="icon">🤝</div>
+        <h3>Professional Service</h3>
+        <p>
+          Customer-focused service with a commitment to
+          reliability, communication and long-term relationships.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT OAG -->
+  <section class="about-home">
+
+    <div class="about-content">
+
+      <h2>About OAG Services & Traders</h2>
+
+      <p>
+        OAG Services & Traders is committed to becoming a trusted
+        partner for businesses by providing dependable industrial
+        products and services. Our focus is on quality, customer
+        satisfaction and building long-term professional relationships.
+      </p>
+
+      <p>
+        We understand that industries need more than just products.
+        They need a supplier they can rely on. That is why we work
+        with responsibility, professionalism and dedication to serve
+        every customer with the best possible support.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHY CHOOSE US -->
+  <section class="container" style="padding:55px 20px;">
+
+    <div class="section-heading">
+
+      <h2>Why Choose OAG?</h2>
+
+      <p>
+        We aim to make every customer experience reliable,
+        professional and worth coming back for.
+      </p>
+
+    </div>
+
+
+    <div class="why-grid">
+
+      <div class="why-item">
+        <strong>✓ Quality Focus</strong>
+        <p>
+          We focus on providing dependable products suitable
+          for industrial and workplace requirements.
+        </p>
+      </div>
+
+      <div class="why-item">
+        <strong>✓ Reliability</strong>
+        <p>
+          Our goal is to become a supplier our customers
+          can confidently depend on.
+        </p>
+      </div>
+
+      <div class="why-item">
+        <strong>✓ Professional Service</strong>
+        <p>
+          We value clear communication, responsible dealing
+          and professional customer support.
+        </p>
+      </div>
+
+      <div class="why-item">
+        <strong>✓ Customer Commitment</strong>
+        <p>
+          Your satisfaction and long-term trust are among
+          our most important priorities.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRODUCTS CTA -->
+  <section class="final-cta">
+
+    <h2>Looking for Reliable Industrial Products?</h2>
+
+    <p>
+      Explore our product range or contact OAG Services & Traders
+      directly. We would be pleased to discuss your requirements
+      and help you find the right solution.
+    </p>
+
+    <div class="home-buttons">
+
+      <a href="products.html" class="home-btn primary">
+        View Products
+      </a>
+
+      <a
+        href="https://wa.me/923073284606?text=Assalam-o-Alaikum%2C%20I%20would%20like%20to%20make%20an%20enquiry%20about%20OAG%20Services%20%26%20Traders."
+        class="home-btn whatsapp"
+        target="_blank">
+        💬 Contact on WhatsApp
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container footgrid">
+
+      <div>
+        <h3>OAG Services & Traders</h3>
+        <p>
+          Your Trusted Industrial Supply Partner.
+        </p>
       </div>
 
       <div>
-        <h4>Contact</h4>
-        <p>
-          oagsat@gmail.com<br>
-          0307-3284606<br>
-          0301-7614607
-        </p>
+        <h3>Contact</h3>
+        <p>Email: oagsat@gmail.com</p>
+        <p>Phone: 0307-3284606</p>
+        <p>Phone: 0301-7614607</p>
       </div>
 
     </div>
 
     <div class="bottom">
-      © 2026 OAG Services & Traders. All rights reserved.
+      © 2026 OAG Services & Traders. All Rights Reserved.
     </div>
 
-  </div>
-</footer>
+  </footer>
 
-<script>
-document.querySelector('.menu').addEventListener('click', function() {
-  document.querySelector('.links').classList.toggle('open');
-});
-</script>
 
 </body>
 </html>
