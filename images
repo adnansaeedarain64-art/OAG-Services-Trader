@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial & Safety Images</title>
+</head>
+
+<body>
+
+    <!-- SAFETY PRODUCTS -->
+
+    <img src="images/safety-harness.jpg" alt="Safety Harness">
+
+    <img src="images/goggles-face-shield.jpg" alt="Goggles & Face Shield">
+
+    <img src="images/safety-gloves.jpg" alt="Safety Gloves">
+
+    <img src="images/reflective-jacket.jpg" alt="Reflective Jacket">
+
+    <img src="images/safety-helmet.jpg" alt="Safety Helmet">
+
+    <img src="images/safety-shoes.jpg" alt="Safety Shoes">
+
+    <img src="images/ear-protection.jpg" alt="Ear Protection">
+
+    <img src="images/safety-mask.jpg" alt="Safety Mask">
+
+    <img src="images/safety-cone.jpg" alt="Safety Cone">
+
+    <img src="images/fall-arrest.jpg" alt="Fall Arrest System">
+
+
+    <!-- INDUSTRIAL PRODUCTS -->
+
+    <img src="images/flow-meter.jpg" alt="Flow Meter">
+
+    <img src="images/control-valve.jpg" alt="Control Valve">
+
+    <img src="images/valves.jpg" alt="Industrial Valves">
+
+    <img src="images/pressure-gauge.jpg" alt="Pressure Gauge">
+
+    <img src="images/industrial-pump.jpg" alt="Industrial Pump">
+
+    <img src="images/pipe-fittings.jpg" alt="Pipe Fittings">
+
+    <img src="images/ball-valve.jpg" alt="Ball Valve">
+
+    <img src="images/butterfly-valve.jpg" alt="Butterfly Valve">
+
+    <img src="images/gate-valve.jpg" alt="Gate Valve">
+
+    <img src="images/pneumatic-valve.jpg" alt="Pneumatic Valve">
+
+    <img src="images/industrial-motor.jpg" alt="Industrial Motor">
+
+    <img src="images/industrial-tools.jpg" alt="Industrial Tools">
+
+</body>
+</html>
