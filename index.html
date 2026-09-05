@@ -4,12 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>OAG Services & Traders | Industrial Solutions</title>
+<title>OAG Services & Traders | Industrial Supply & Solutions</title>
 
-<meta name="description"
-content="OAG Services & Traders - Industrial, Electrical, Mechanical, Safety Products and Technical Services.">
+<meta name="description" content="OAG Services & Traders - Your trusted source for industrial, electrical, mechanical and safety products in Pakistan.">
 
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -17,64 +22,55 @@ content="OAG Services & Traders - Industrial, Electrical, Mechanical, Safety Pro
 <!-- TOP BAR -->
 <div class="topbar">
     <div class="container topbar-inner">
-        <div>Industrial • Electrical • Mechanical • Safety Supply</div>
 
         <div>
-            📞 <a href="tel:+923073284606">0307-3284606</a>
-            &nbsp; | &nbsp;
-            ✉ <a href="mailto:oagsat@gmail.com">oagsat@gmail.com</a>
+            <span>📞 0307-3284606</span>
+            <span>✉ oagsat@gmail.com</span>
         </div>
+
+        <div>
+            <span>Quality • Reliability • Efficiency</span>
+        </div>
+
     </div>
 </div>
 
 
-<!-- NAVIGATION -->
-<header class="header">
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
 
-    <div class="container nav">
+    <div class="container nav-inner">
 
-        <a href="index.html" class="logo-area">
+        <a href="index.html" class="logo">
 
-            <img src="assets/oag-logo.png"
-                 alt="OAG Services & Traders Logo">
+            <div class="logo-mark">
+                ⚙
+            </div>
 
-            <div>
-                <strong>OAG SERVICES & TRADERS</strong>
-                <span>SUPPLYING SOLUTIONS • BUILDING TRUST</span>
+            <div class="logo-text">
+                <strong>OAG</strong>
+                <span>Services & Traders</span>
             </div>
 
         </a>
 
 
-        <button class="menu-btn" onclick="toggleMenu()">
+        <button class="menu-btn" id="menuBtn">
             ☰
         </button>
 
 
         <nav id="mainNav">
 
-            <a href="index.html" class="active">
-                Home
-            </a>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="services.html">Services</a>
+            <a href="industrial.html">Industries</a>
+            <a href="contact.html">Contact</a>
 
-            <a href="about.html">
-                About
-            </a>
-
-            <a href="products.html">
-                Products
-            </a>
-
-            <a href="services.html">
-                Services
-            </a>
-
-            <a href="industries.html">
-                Industries
-            </a>
-
-            <a href="contact.html" class="quote-btn">
-                Get a Quote
+            <a href="https://wa.me/923073284606" class="nav-quote">
+                Get Quote
             </a>
 
         </nav>
@@ -85,86 +81,97 @@ content="OAG Services & Traders - Industrial, Electrical, Mechanical, Safety Pro
 
 
 
-<!-- HERO / WELCOME -->
+<!-- HERO -->
 <section class="hero">
+
+    <div class="hero-overlay"></div>
 
     <div class="container hero-content">
 
         <div class="hero-text">
 
-            <div class="small-badge">
-                ● TRUSTED INDUSTRIAL SUPPLY PARTNER
+            <div class="hero-badge">
+                YOUR TRUSTED INDUSTRIAL PARTNER
             </div>
 
-
             <h1>
-                YOUR ONE STOP
-                <span>INDUSTRIAL</span>
-                SOLUTION
+                Industrial Solutions
+                <span>Built on Trust.</span>
             </h1>
 
-
             <p>
-                OAG Services & Traders provides reliable industrial,
-                electrical, mechanical, piping, instrumentation and
-                safety products with dependable service and professional
-                technical support.
+                Quality industrial, electrical, mechanical and safety
+                products for businesses that demand reliability,
+                performance and professional service.
             </p>
-
 
             <div class="hero-buttons">
 
-                <a href="products.html" class="btn orange-btn">
-                    EXPLORE PRODUCTS →
+                <a href="products.html" class="btn btn-primary">
+                    Explore Products →
                 </a>
 
-                <a href="contact.html" class="btn outline-btn">
-                    REQUEST A QUOTE
+                <a href="contact.html" class="btn btn-outline">
+                    Contact Us
                 </a>
 
             </div>
 
+            <div class="hero-trust">
 
-            <div class="hero-note">
+                <div>
+                    <strong>✓</strong>
+                    Quality Products
+                </div>
 
-                <span>✓</span> Quality Products
-                <span>✓</span> Competitive Prices
-                <span>✓</span> Timely Delivery
+                <div>
+                    <strong>✓</strong>
+                    Competitive Prices
+                </div>
+
+                <div>
+                    <strong>✓</strong>
+                    Timely Delivery
+                </div>
 
             </div>
 
         </div>
 
 
-
-        <!-- WELCOME VIDEO -->
-
+        <!-- WELCOME VIDEO / ANIMATION -->
         <div class="welcome-video">
 
-            <video
-                controls
-                autoplay
-                muted
-                loop
-                playsinline
-                poster="assets/hero-industrial-poster.png">
+            <div class="video-card">
 
-                <source
-                    src="assets/welcome-video.mp4"
-                    type="video/mp4">
+                <div class="video-screen">
 
-                Your browser does not support video.
+                    <div class="video-glow"></div>
 
-            </video>
+                    <div class="animated-worker">
 
+                        <div class="worker-head"></div>
 
-            <div class="video-caption">
+                        <div class="worker-body">
+                            <div class="worker-shirt">OAG</div>
+                        </div>
 
-                <strong>WELCOME TO OAG</strong>
+                        <div class="worker-arm"></div>
 
-                <br>
+                    </div>
 
-                Your Trusted Industrial Supply Partner
+                    <div class="video-message">
+                        <small>WELCOME TO OAG</small>
+                        <strong>Explore Our Website</strong>
+                        <span>Discover Industrial Solutions →</span>
+                    </div>
+
+                </div>
+
+                <div class="video-caption">
+                    <span class="pulse-dot"></span>
+                    Welcome to OAG Services & Traders
+                </div>
 
             </div>
 
@@ -176,52 +183,85 @@ content="OAG Services & Traders - Industrial, Electrical, Mechanical, Safety Pro
 
 
 
-<!-- QUICK STATS -->
+<!-- STATS -->
+<section class="stats">
 
-<section class="stats-section">
+    <div class="container stats-grid">
 
-    <div class="container stats">
-
-        <div class="stat-box">
-
-            <strong>2013</strong>
-
-            <span>
-                Established
-            </span>
-
+        <div class="stat">
+            <strong>100+</strong>
+            <span>Industrial Products</span>
         </div>
 
-
-        <div class="stat-box">
-
+        <div class="stat">
             <strong>6+</strong>
-
-            <span>
-                Industrial Categories
-            </span>
-
+            <span>Product Categories</span>
         </div>
 
-
-        <div class="stat-box">
-
-            <strong>4</strong>
-
-            <span>
-                Office Locations
-            </span>
-
-        </div>
-
-
-        <div class="stat-box">
-
+        <div class="stat">
             <strong>24/7</strong>
+            <span>Customer Support</span>
+        </div>
 
-            <span>
-                Customer Support
-            </span>
+        <div class="stat">
+            <strong>100%</strong>
+            <span>Commitment</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ABOUT INTRO -->
+<section class="section">
+
+    <div class="container about-grid">
+
+        <div class="about-image">
+
+            <div class="image-box">
+
+                <div class="gear-big">⚙</div>
+
+                <div>
+                    <span>OAG</span>
+                    <strong>Industrial Solutions</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <div class="section-label">
+                ABOUT OAG
+            </div>
+
+            <h2>
+                Your One-Stop Solution
+                <span>for Industrial Needs</span>
+            </h2>
+
+            <p>
+                OAG Services & Traders is committed to supplying
+                dependable industrial products and professional
+                solutions to businesses across Pakistan.
+            </p>
+
+            <p>
+                From industrial mechanical products and electrical
+                components to safety equipment and engineering supplies,
+                we aim to provide quality products, competitive pricing
+                and reliable customer service.
+            </p>
+
+            <a href="about.html" class="text-link">
+                Discover More About OAG →
+            </a>
 
         </div>
 
@@ -231,206 +271,158 @@ content="OAG Services & Traders - Industrial, Electrical, Mechanical, Safety Pro
 
 
 
-<!-- INDUSTRIAL PRODUCTS -->
-
-<section class="section">
+<!-- PRODUCT CATEGORIES -->
+<section class="section light-section">
 
     <div class="container">
 
-        <div class="section-title">
+        <div class="section-heading">
 
-            <span>
-                WHAT WE SUPPLY
-            </span>
+            <div class="section-label">
+                OUR PRODUCTS
+            </div>
 
             <h2>
-                INDUSTRIAL PRODUCTS
+                Industrial Products
+                <span>You Can Rely On</span>
             </h2>
 
             <p>
-                Quality industrial products for demanding
-                applications and professional requirements.
+                Explore our wide range of industrial, electrical,
+                mechanical and safety products.
             </p>
 
         </div>
-
 
 
         <div class="product-grid">
 
 
-            <!-- PRODUCT 1 -->
+            <a href="products.html" class="product-card">
 
-            <div class="product-card">
-
-                <img
-                    src="assets/industrial/01_Industrial_MS_SS_Pipe_Fittings.png"
-                    alt="Industrial MS SS Pipe and Fittings">
-
-                <div class="product-content">
-
-                    <h3>
-                        MS / SS PIPE & FITTINGS
-                    </h3>
-
-                    <p>
-                        Industrial pipes, elbows, tees, reducers,
-                        couplings, flanges and related components.
-                    </p>
-
-                    <a href="products.html">
-                        VIEW PRODUCTS →
-                    </a>
-
+                <div class="product-image">
+                    <img src="assets/images/pipes.jpg"
+                         alt="Industrial Pipes and Fittings"
+                         onerror="this.style.display='none'">
+                    <div class="fallback-icon">⚙</div>
                 </div>
 
-            </div>
-
-
-
-            <!-- PRODUCT 2 -->
-
-            <div class="product-card">
-
-                <img
-                    src="assets/industrial/02_Valves.png"
-                    alt="Industrial Valves">
-
-                <div class="product-content">
-
-                    <h3>
-                        INDUSTRIAL VALVES
-                    </h3>
-
-                    <p>
-                        Gate, globe, ball and butterfly valves
-                        for industrial flow control applications.
-                    </p>
-
-                    <a href="products.html">
-                        VIEW PRODUCTS →
-                    </a>
-
+                <div class="product-info">
+                    <span>01</span>
+                    <h3>MS / SS Pipes & Fittings</h3>
+                    <p>Pipes, fittings, elbows, flanges and industrial connections.</p>
+                    <b>View Products →</b>
                 </div>
 
-            </div>
+            </a>
 
 
 
-            <!-- PRODUCT 3 -->
+            <a href="products.html" class="product-card">
 
-            <div class="product-card">
-
-                <img
-                    src="assets/industrial/03_Flow_Meters.png"
-                    alt="Industrial Flow Meters">
-
-                <div class="product-content">
-
-                    <h3>
-                        FLOW METERS
-                    </h3>
-
-                    <p>
-                        Reliable flow measurement solutions
-                        for industrial process applications.
-                    </p>
-
-                    <a href="products.html">
-                        VIEW PRODUCTS →
-                    </a>
-
+                <div class="product-image">
+                    <img src="assets/images/valves.jpg"
+                         alt="Industrial Valves"
+                         onerror="this.style.display='none'">
+                    <div class="fallback-icon">⚙</div>
                 </div>
 
-            </div>
-
-
-
-            <!-- PRODUCT 4 -->
-
-            <div class="product-card">
-
-                <img
-                    src="assets/industrial/04_Control_Valves.png"
-                    alt="Control Valves">
-
-                <div class="product-content">
-
-                    <h3>
-                        CONTROL VALVES
-                    </h3>
-
-                    <p>
-                        Control valve assemblies for accurate
-                        automatic process regulation.
-                    </p>
-
-                    <a href="products.html">
-                        VIEW PRODUCTS →
-                    </a>
-
+                <div class="product-info">
+                    <span>02</span>
+                    <h3>Industrial Valves</h3>
+                    <p>Reliable valves for industrial applications and systems.</p>
+                    <b>View Products →</b>
                 </div>
 
-            </div>
+            </a>
 
 
 
-            <!-- PRODUCT 5 -->
+            <a href="products.html" class="product-card">
 
-            <div class="product-card">
-
-                <img
-                    src="assets/industrial/05_Other_Instruments_Accessories.png"
-                    alt="Industrial Instruments">
-
-                <div class="product-content">
-
-                    <h3>
-                        INSTRUMENTS & ACCESSORIES
-                    </h3>
-
-                    <p>
-                        Gauges, transmitters, sensors, probes,
-                        fittings and instrumentation accessories.
-                    </p>
-
-                    <a href="products.html">
-                        VIEW PRODUCTS →
-                    </a>
-
+                <div class="product-image">
+                    <img src="assets/images/flow-meters.jpg"
+                         alt="Flow Meters"
+                         onerror="this.style.display='none'">
+                    <div class="fallback-icon">◉</div>
                 </div>
 
-            </div>
-
-
-
-            <!-- PRODUCT 6 -->
-
-            <div class="product-card">
-
-                <img
-                    src="assets/industrial/06_Flanges_Bolts_Gaskets.png"
-                    alt="Flanges Bolts and Gaskets">
-
-                <div class="product-content">
-
-                    <h3>
-                        FLANGES, BOLTS & GASKETS
-                    </h3>
-
-                    <p>
-                        Industrial joining and sealing components
-                        for piping and process systems.
-                    </p>
-
-                    <a href="products.html">
-                        VIEW PRODUCTS →
-                    </a>
-
+                <div class="product-info">
+                    <span>03</span>
+                    <h3>Flow Meters</h3>
+                    <p>Industrial flow measurement products and instruments.</p>
+                    <b>View Products →</b>
                 </div>
 
-            </div>
+            </a>
 
+
+
+            <a href="products.html" class="product-card">
+
+                <div class="product-image">
+                    <img src="assets/images/control-valves.jpg"
+                         alt="Control Valves"
+                         onerror="this.style.display='none'">
+                    <div class="fallback-icon">⚙</div>
+                </div>
+
+                <div class="product-info">
+                    <span>04</span>
+                    <h3>Control Valves</h3>
+                    <p>Industrial control and regulating valve solutions.</p>
+                    <b>View Products →</b>
+                </div>
+
+            </a>
+
+
+
+            <a href="products.html" class="product-card">
+
+                <div class="product-image">
+                    <img src="assets/images/instruments.jpg"
+                         alt="Industrial Instruments"
+                         onerror="this.style.display='none'">
+                    <div class="fallback-icon">◉</div>
+                </div>
+
+                <div class="product-info">
+                    <span>05</span>
+                    <h3>Instruments & Accessories</h3>
+                    <p>Pressure, temperature and industrial measuring instruments.</p>
+                    <b>View Products →</b>
+                </div>
+
+            </a>
+
+
+
+            <a href="products.html" class="product-card">
+
+                <div class="product-image">
+                    <img src="assets/images/electrical.jpg"
+                         alt="Electrical Products"
+                         onerror="this.style.display='none'">
+                    <div class="fallback-icon">⚡</div>
+                </div>
+
+                <div class="product-info">
+                    <span>06</span>
+                    <h3>Electrical Products</h3>
+                    <p>Electrical components, control equipment, cables and accessories.</p>
+                    <b>View Products →</b>
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <div class="center-btn">
+            <a href="products.html" class="btn btn-primary">
+                View All Products →
+            </a>
         </div>
 
     </div>
@@ -439,371 +431,61 @@ content="OAG Services & Traders - Industrial, Electrical, Mechanical, Safety Pro
 
 
 
-<!-- SAFETY PRODUCTS -->
-
-<section class="section light-section">
+<!-- WHY OAG -->
+<section class="section why-section">
 
     <div class="container">
 
-        <div class="section-title">
+        <div class="section-heading">
 
-            <span>
-                PROTECTION FIRST
-            </span>
+            <div class="section-label">
+                WHY CHOOSE OAG?
+            </div>
 
             <h2>
-                SAFETY EQUIPMENT
+                Supplying Quality.
+                <span>Delivering Trust.</span>
             </h2>
 
-            <p>
-                Reliable safety products for industrial,
-                construction and workplace protection.
-            </p>
-
         </div>
 
 
+        <div class="why-grid">
 
-        <div class="product-grid">
-
-
-            <div class="product-card">
-
-                <img
-                    src="assets/safety/01_Safety_Helmets.png"
-                    alt="Safety Helmets">
-
-                <div class="product-content">
-
-                    <h3>
-                        SAFETY HELMETS
-                    </h3>
-
-                    <p>
-                        Protective headgear for industrial
-                        and construction environments.
-                    </p>
-
-                    <a href="products.html">
-                        VIEW PRODUCTS →
-                    </a>
-
-                </div>
-
+            <div class="why-card">
+                <div class="why-icon">✓</div>
+                <h3>Quality Products</h3>
+                <p>We focus on dependable products suitable for industrial requirements.</p>
             </div>
 
-
-
-            <div class="product-card">
-
-                <img
-                    src="assets/safety/02_Safety_Gloves.png"
-                    alt="Safety Gloves">
-
-                <div class="product-content">
-
-                    <h3>
-                        SAFETY GLOVES
-                    </h3>
-
-                    <p>
-                        Hand protection solutions for
-                        industrial workplace requirements.
-                    </p>
-
-                    <a href="products.html">
-                        VIEW PRODUCTS →
-                    </a>
-
-                </div>
-
+            <div class="why-card">
+                <div class="why-icon">₨</div>
+                <h3>Competitive Prices</h3>
+                <p>Professional supply solutions with competitive market pricing.</p>
             </div>
 
-
-
-            <div class="product-card">
-
-                <img
-                    src="assets/safety/03_Reflective_Jackets.png"
-                    alt="Reflective Jackets">
-
-                <div class="product-content">
-
-                    <h3>
-                        REFLECTIVE JACKETS
-                    </h3>
-
-                    <p>
-                        High visibility workwear for
-                        industrial and construction sites.
-                    </p>
-
-                    <a href="products.html">
-                        VIEW PRODUCTS →
-                    </a>
-
-                </div>
-
+            <div class="why-card">
+                <div class="why-icon">⚡</div>
+                <h3>Quick Response</h3>
+                <p>We value clear communication and quick response to customer requirements.</p>
             </div>
 
-
-
-            <div class="product-card">
-
-                <img
-                    src="assets/safety/04_Safety_Harness.png"
-                    alt="Safety Harness">
-
-                <div class="product-content">
-
-                    <h3>
-                        SAFETY HARNESS
-                    </h3>
-
-                    <p>
-                        Fall protection equipment for
-                        elevated work applications.
-                    </p>
-
-                    <a href="products.html">
-                        VIEW PRODUCTS →
-                    </a>
-
-                </div>
-
+            <div class="why-card">
+                <div class="why-icon">🚚</div>
+                <h3>Timely Delivery</h3>
+                <p>Our goal is to deliver products according to customer requirements.</p>
             </div>
 
-
-
-            <div class="product-card">
-
-                <img
-                    src="assets/safety/05_Fire_Extinguishers.png"
-                    alt="Fire Extinguishers">
-
-                <div class="product-content">
-
-                    <h3>
-                        FIRE EXTINGUISHERS
-                    </h3>
-
-                    <p>
-                        Fire fighting equipment and
-                        workplace protection solutions.
-                    </p>
-
-                    <a href="products.html">
-                        VIEW PRODUCTS →
-                    </a>
-
-                </div>
-
+            <div class="why-card">
+                <div class="why-icon">🛠</div>
+                <h3>Technical Support</h3>
+                <p>We help customers identify suitable products for their applications.</p>
             </div>
 
-
-
-            <div class="product-card">
-
-                <img
-                    src="assets/safety/06_Goggles_Face_Shield.png"
-                    alt="Safety Goggles and Face Shield">
-
-                <div class="product-content">
-
-                    <h3>
-                        GOGGLES & FACE SHIELD
-                    </h3>
-
-                    <p>
-                        Eye and face protection for
-                        industrial work environments.
-                    </p>
-
-                    <a href="products.html">
-                        VIEW PRODUCTS →
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- WHY CHOOSE OAG -->
-
-<section class="section">
-
-    <div class="container two-column">
-
-        <div class="why-content">
-
-            <span class="section-label">
-                WHY OAG
-            </span>
-
-            <h2>
-                BUILT AROUND
-                <span>RELIABILITY</span>
-            </h2>
-
-            <p>
-                OAG Services & Traders focuses on dependable
-                supply, customer satisfaction and practical
-                solutions for industrial requirements.
-            </p>
-
-
-            <ul class="check-list">
-
-                <li>
-                    Wide range of industrial products
-                </li>
-
-                <li>
-                    Quality-focused sourcing
-                </li>
-
-                <li>
-                    Competitive prices
-                </li>
-
-                <li>
-                    Timely delivery
-                </li>
-
-                <li>
-                    Technical support
-                </li>
-
-                <li>
-                    Customer satisfaction
-                </li>
-
-            </ul>
-
-        </div>
-
-
-
-        <div class="visual-box">
-
-            <img
-                src="assets/electrical-poster.png"
-                alt="OAG Electrical Products">
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- SERVICES -->
-
-<section class="section light-section">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>
-                OUR CAPABILITIES
-            </span>
-
-            <h2>
-                PROFESSIONAL SERVICES
-            </h2>
-
-            <p>
-                Supply and technical support for a broad
-                range of industrial requirements.
-            </p>
-
-        </div>
-
-
-        <div class="services-grid">
-
-
-            <div class="service-box">
-
-                <div class="service-icon">
-                    ⚙
-                </div>
-
-                <h3>
-                    GENERAL ORDER SUPPLY
-                </h3>
-
-                <p>
-                    Industrial, electrical, mechanical,
-                    hardware and miscellaneous supplies.
-                </p>
-
-            </div>
-
-
-
-            <div class="service-box">
-
-                <div class="service-icon">
-                    🔥
-                </div>
-
-                <h3>
-                    HEAT TREATMENT / PWHT
-                </h3>
-
-                <p>
-                    Heat treatment and post-weld heat
-                    treatment related services and support.
-                </p>
-
-            </div>
-
-
-
-            <div class="service-box">
-
-                <div class="service-icon">
-                    🔎
-                </div>
-
-                <h3>
-                    NDT INSPECTION
-                </h3>
-
-                <p>
-                    NDT equipment, accessories and
-                    inspection-related support.
-                </p>
-
-            </div>
-
-
-
-            <div class="service-box">
-
-                <div class="service-icon">
-                    🛠
-                </div>
-
-                <h3>
-                    REPAIR & MAINTENANCE
-                </h3>
-
-                <p>
-                    Repair and maintenance support for
-                    industrial and technical equipment.
-                </p>
-
+            <div class="why-card">
+                <div class="why-icon">🤝</div>
+                <h3>Customer Satisfaction</h3>
+                <p>Long-term professional relationships are at the heart of our business.</p>
             </div>
 
         </div>
@@ -815,19 +497,19 @@ content="OAG Services & Traders - Industrial, Electrical, Mechanical, Safety Pro
 
 
 <!-- INDUSTRIES -->
-
-<section class="section">
+<section class="industries">
 
     <div class="container">
 
-        <div class="section-title">
+        <div class="section-heading white">
 
-            <span>
-                EXPERIENCE ACROSS SECTORS
-            </span>
+            <div class="section-label">
+                INDUSTRIES WE SERVE
+            </div>
 
             <h2>
-                INDUSTRIES WE SERVE
+                Supporting
+                <span>Different Industries</span>
             </h2>
 
         </div>
@@ -835,39 +517,34 @@ content="OAG Services & Traders - Industrial, Electrical, Mechanical, Safety Pro
 
         <div class="industry-grid">
 
-            <div>
-                🛢️
+            <div class="industry-item">
+                <div>🛢</div>
                 <strong>Oil & Gas</strong>
             </div>
 
-            <div>
-                ⚗️
+            <div class="industry-item">
+                <div>⚗</div>
                 <strong>Chemical</strong>
             </div>
 
-            <div>
-                ⚡
-                <strong>Power</strong>
+            <div class="industry-item">
+                <div>⚡</div>
+                <strong>Power Plants</strong>
             </div>
 
-            <div>
-                💧
+            <div class="industry-item">
+                <div>💧</div>
                 <strong>Water Treatment</strong>
             </div>
 
-            <div>
-                💊
+            <div class="industry-item">
+                <div>⚕</div>
                 <strong>Pharmaceutical</strong>
             </div>
 
-            <div>
-                🍽️
-                <strong>Food & Beverage</strong>
-            </div>
-
-            <div>
-                🏭
-                <strong>General Industries</strong>
+            <div class="industry-item">
+                <div>🏭</div>
+                <strong>Manufacturing</strong>
             </div>
 
         </div>
@@ -878,34 +555,41 @@ content="OAG Services & Traders - Industrial, Electrical, Mechanical, Safety Pro
 
 
 
-<!-- CALL TO ACTION -->
+<!-- CTA -->
+<section class="cta">
 
-<section class="cta-section">
-
-    <div class="container cta">
+    <div class="container cta-inner">
 
         <div>
 
-            <span>
-                NEED INDUSTRIAL SUPPLIES?
-            </span>
+            <div class="section-label">
+                NEED INDUSTRIAL PRODUCTS?
+            </div>
 
             <h2>
-                LET'S DISCUSS YOUR REQUIREMENT
+                Let's Discuss Your
+                <span>Requirement</span>
             </h2>
 
             <p>
-                Send us your product name, specification,
-                quantity or requirement and our team will
-                get back to you.
+                Contact OAG Services & Traders today and
+                let us help you find the right industrial solution.
             </p>
 
         </div>
 
 
-        <a href="contact.html" class="btn orange-btn">
-            REQUEST A QUOTE →
-        </a>
+        <div class="cta-buttons">
+
+            <a href="https://wa.me/923073284606" class="btn btn-whatsapp">
+                WhatsApp Us
+            </a>
+
+            <a href="contact.html" class="btn btn-white">
+                Send Inquiry
+            </a>
+
+        </div>
 
     </div>
 
@@ -914,22 +598,23 @@ content="OAG Services & Traders - Industrial, Electrical, Mechanical, Safety Pro
 
 
 <!-- FOOTER -->
-
 <footer>
 
     <div class="container footer-grid">
 
+        <div class="footer-about">
 
-        <div>
-
-            <h3>
-                OAG SERVICES & TRADERS
-            </h3>
+            <div class="footer-logo">
+                <div class="logo-mark">⚙</div>
+                <div>
+                    <strong>OAG</strong>
+                    <span>Services & Traders</span>
+                </div>
+            </div>
 
             <p>
-                Your trusted source for industrial,
-                electrical, mechanical and safety
-                products and services.
+                Your trusted partner for industrial,
+                electrical, mechanical and safety products.
             </p>
 
         </div>
@@ -937,12 +622,10 @@ content="OAG Services & Traders - Industrial, Electrical, Mechanical, Safety Pro
 
         <div>
 
-            <h4>
-                QUICK LINKS
-            </h4>
+            <h3>Quick Links</h3>
 
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="about.html">About Us</a>
             <a href="products.html">Products</a>
             <a href="services.html">Services</a>
             <a href="contact.html">Contact</a>
@@ -952,79 +635,45 @@ content="OAG Services & Traders - Industrial, Electrical, Mechanical, Safety Pro
 
         <div>
 
-            <h4>
-                PRODUCTS
-            </h4>
+            <h3>Products</h3>
 
-            <a href="products.html">
-                Industrial Products
-            </a>
-
-            <a href="products.html">
-                Electrical Products
-            </a>
-
-            <a href="products.html">
-                Mechanical Products
-            </a>
-
-            <a href="products.html">
-                Safety Equipment
-            </a>
+            <a href="products.html">Industrial Products</a>
+            <a href="products.html">Electrical Products</a>
+            <a href="products.html">Safety Equipment</a>
+            <a href="products.html">Mechanical Products</a>
 
         </div>
 
 
         <div>
 
-            <h4>
-                CONTACT
-            </h4>
+            <h3>Contact</h3>
 
-            <p>
-                📞 0307-3284606
-            </p>
+            <p>📞 0307-3284606</p>
+            <p>📞 0301-7614607</p>
+            <p>✉ oagsat@gmail.com</p>
 
-            <p>
-                📞 0301-7614607
-            </p>
-
-            <p>
-                ✉ oagsat@gmail.com
-            </p>
-
-            <p>
-                📍 Sadiqabad, Rahim Yar Khan
-            </p>
+            <a href="https://wa.me/923073284606" class="footer-whatsapp">
+                WhatsApp
+            </a>
 
         </div>
 
     </div>
 
 
-    <div class="copyright">
+    <div class="footer-bottom">
 
-        © 2026 OAG Services & Traders.
-        All Rights Reserved.
+        <div class="container">
+
+            © 2026 OAG Services & Traders.
+            All Rights Reserved.
+
+        </div>
 
     </div>
 
 </footer>
-
-
-
-<!-- WHATSAPP BUTTON -->
-
-<a
-    href="https://wa.me/923073284606"
-    class="whatsapp"
-    target="_blank"
-    aria-label="WhatsApp">
-
-    ☎
-
-</a>
-
 
 
 <script src="script.js"></script>
