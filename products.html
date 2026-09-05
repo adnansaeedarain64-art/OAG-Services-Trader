@@ -1,366 +1,673 @@
-```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OAG Services & Traders | Products</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Products | OAG Services & Traders</title>
 
 <link rel="stylesheet" href="style.css">
 
-<style>
-/* Professional Welcome Box */
-.welcome-box {
-  background: linear-gradient(135deg, #0b1724, #173b55);
-  color: white;
-  border-radius: 18px;
-  padding: 45px 30px;
-  text-align: center;
-  margin-bottom: 55px;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.15);
-  position: relative;
-  overflow: hidden;
-}
-
-.welcome-box::after {
-  content: "";
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  border: 2px solid rgba(255,255,255,0.08);
-  border-radius: 50%;
-  right: -60px;
-  top: -70px;
-}
-
-.welcome-box small {
-  display: block;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  opacity: 0.8;
-  margin-bottom: 12px;
-}
-
-.welcome-box h2 {
-  font-size: 32px;
-  margin: 0 0 15px;
-}
-
-.welcome-box p {
-  max-width: 760px;
-  margin: 0 auto 25px;
-  line-height: 1.8;
-  opacity: 0.92;
-}
-
-.welcome-heart {
-  font-size: 28px;
-  margin-bottom: 12px;
-}
-
-/* WhatsApp Button */
-.whatsapp-btn {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 10px 18px;
-  border-radius: 7px;
-  text-decoration: none;
-  color: white !important;
-  background: #25D366;
-  font-weight: 600;
-  transition: 0.3s ease;
-}
-
-.whatsapp-btn:hover {
-  transform: translateY(-2px);
-  opacity: 0.9;
-}
-</style>
-
 </head>
+
 
 <body>
 
-<div class="top">
-  <div class="container">
-    <span>Industrial Supply • Engineering • Maintenance • Manpower</span>
-    <span>oagsat@gmail.com | 0307-3284606 | 0301-7614607</span>
-  </div>
+
+<div class="topbar">
+
+<div class="container topbar-inner">
+
+<div>
+Industrial • Electrical • Mechanical • Safety Supply
 </div>
 
-<nav class="nav">
-  <div class="container">
+<div>
+📞 0307-3284606
+&nbsp; | &nbsp;
+✉ oagsat@gmail.com
+</div>
 
-    <a class="brand" href="index.html">
-      <div class="logo">OAG</div>
-      <span>OAG Services & Traders</span>
-    </a>
+</div>
 
-    <button class="menu" aria-label="Menu">☰</button>
+</div>
 
-    <div class="links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a class="active" href="products.html">Products</a>
-      <a href="services.html">Services</a>
-      <a href="experience.html">Experience</a>
-      <a href="clients.html">Clients</a>
-      <a href="contact.html">Contact</a>
-    </div>
 
-  </div>
+
+<header class="header">
+
+<div class="container nav">
+
+<a href="index.html" class="logo-area">
+
+<img
+src="assets/oag-logo.png"
+alt="OAG Logo">
+
+<div>
+
+<strong>
+OAG SERVICES & TRADERS
+</strong>
+
+<span>
+SUPPLYING SOLUTIONS • BUILDING TRUST
+</span>
+
+</div>
+
+</a>
+
+
+<button class="menu-btn"
+onclick="toggleMenu()">
+☰
+</button>
+
+
+<nav id="mainNav">
+
+<a href="index.html">
+Home
+</a>
+
+<a href="about.html">
+About
+</a>
+
+<a href="products.html" class="active">
+Products
+</a>
+
+<a href="services.html">
+Services
+</a>
+
+<a href="industries.html">
+Industries
+</a>
+
+<a href="contact.html"
+class="quote-btn">
+Get a Quote
+</a>
+
 </nav>
 
-<section class="pagehero">
-  <div class="container">
-    <h1>Our Products</h1>
-    <p>
-      Quality industrial, safety, electrical, mechanical and general
-      supplies for professional and industrial requirements.
-    </p>
-  </div>
+</div>
+
+</header>
+
+
+
+<section class="page-hero">
+
+<div class="container">
+
+<span class="section-label"
+style="color:#ffb06e">
+
+PRODUCT CATALOGUE
+
+</span>
+
+<h1>
+INDUSTRIAL & SAFETY PRODUCTS
+</h1>
+
+<p>
+
+Quality products for industrial,
+electrical, mechanical and workplace
+safety requirements.
+
+</p>
+
+</div>
+
 </section>
+
+
 
 <section class="section">
-  <div class="container">
 
-    <!-- WELCOME SECTION -->
-    <div class="welcome-box">
-      <div class="welcome-heart">♥</div>
+<div class="container">
 
-      <small>Welcome to OAG Services & Traders</small>
 
-      <h2>Your Trusted Industrial Supply Partner</h2>
+<div class="filterbar">
 
-      <p>
-        We are delighted to welcome you to OAG Services & Traders.
-        Your trust, support and business are truly valuable to us.
-        We are committed to providing quality products, reliable service
-        and professional solutions to meet your industrial requirements.
-      </p>
+<button
+class="filter active"
+data-filter="all">
 
-      <p>
-        Thank you for choosing OAG Services & Traders.
-        We look forward to serving you and building a long-lasting
-        relationship based on trust, quality and commitment.
-      </p>
+ALL PRODUCTS
 
-      <a class="whatsapp-btn"
-         href="https://wa.me/923073284606?text=Assalam-o-Alaikum%2C%20I%20visited%20the%20OAG%20Services%20%26%20Traders%20website%20and%20would%20like%20to%20know%20more%20about%20your%20products."
-         target="_blank">
-        WhatsApp Us
-      </a>
-    </div>
+</button>
 
-    <div class="section-title">
-      <small>OAG Product Range</small>
-      <h2>Industrial & Safety Products</h2>
-      <p>
-        We supply a wide range of industrial products and safety equipment.
-      </p>
-    </div>
+<button
+class="filter"
+data-filter="industrial">
 
-    <div class="grid3">
+INDUSTRIAL
 
-      <div class="card">
-        <img src="images/helmets.jpg" alt="Safety Helmets">
-        <h3>Safety Helmets</h3>
-        <p>
-          Industrial safety helmets for construction, factories,
-          engineering and workplace protection.
-        </p>
-        <a class="whatsapp-btn"
-           href="https://wa.me/923073284606?text=Assalam-o-Alaikum%2C%20I%20am%20interested%20in%20Safety%20Helmets.%20Please%20share%20price%20and%20availability."
-           target="_blank">
-          WhatsApp Enquiry
-        </a>
-      </div>
+</button>
 
-      <div class="card">
-        <img src="images/gloves.jpg" alt="Safety Gloves">
-        <h3>Safety Gloves</h3>
-        <p>
-          Protective gloves suitable for industrial, mechanical,
-          construction and general workplace applications.
-        </p>
-        <a class="whatsapp-btn"
-           href="https://wa.me/923073284606?text=Assalam-o-Alaikum%2C%20I%20am%20interested%20in%20Safety%20Gloves.%20Please%20share%20price%20and%20availability."
-           target="_blank">
-          WhatsApp Enquiry
-        </a>
-      </div>
+<button
+class="filter"
+data-filter="safety">
 
-      <div class="card">
-        <img src="images/jackets.jpg" alt="Reflective Safety Jackets">
-        <h3>Reflective Jackets</h3>
-        <p>
-          High-visibility reflective jackets for industrial,
-          road, construction and site safety.
-        </p>
-        <a class="whatsapp-btn"
-           href="https://wa.me/923073284606?text=Assalam-o-Alaikum%2C%20I%20am%20interested%20in%20Reflective%20Jackets.%20Please%20share%20price%20and%20availability."
-           target="_blank">
-          WhatsApp Enquiry
-        </a>
-      </div>
+SAFETY
 
-      <div class="card">
-        <img src="images/harness.jpg" alt="Safety Harness">
-        <h3>Safety Harnesses</h3>
-        <p>
-          Safety harness equipment for working at height and
-          industrial protection requirements.
-        </p>
-        <a class="whatsapp-btn"
-           href="https://wa.me/923073284606?text=Assalam-o-Alaikum%2C%20I%20am%20interested%20in%20Safety%20Harnesses.%20Please%20share%20price%20and%20availability."
-           target="_blank">
-          WhatsApp Enquiry
-        </a>
-      </div>
+</button>
 
-      <div class="card">
-        <img src="images/fire-extinguisher.jpg" alt="Fire Extinguishers">
-        <h3>Fire Extinguishers</h3>
-        <p>
-          Fire protection equipment for industrial, commercial
-          and workplace safety applications.
-        </p>
-        <a class="whatsapp-btn"
-           href="https://wa.me/923073284606?text=Assalam-o-Alaikum%2C%20I%20am%20interested%20in%20Fire%20Extinguishers.%20Please%20share%20price%20and%20availability."
-           target="_blank">
-          WhatsApp Enquiry
-        </a>
-      </div>
+</div>
 
-      <div class="card">
-        <img src="images/goggles.jpg" alt="Safety Goggles and Face Shields">
-        <h3>Goggles & Face Shields</h3>
-        <p>
-          Eye and face protection equipment for industrial,
-          welding and workplace safety.
-        </p>
-        <a class="whatsapp-btn"
-           href="https://wa.me/923073284606?text=Assalam-o-Alaikum%2C%20I%20am%20interested%20in%20Goggles%20and%20Face%20Shields.%20Please%20share%20price%20and%20availability."
-           target="_blank">
-          WhatsApp Enquiry
-        </a>
-      </div>
 
-      <div class="card">
-        <img src="images/electrical.jpg" alt="Electrical Products">
-        <h3>Electrical Products</h3>
-        <p>
-          Electrical components, cables, breakers, motors,
-          switches and related industrial equipment.
-        </p>
-        <a class="whatsapp-btn"
-           href="https://wa.me/923073284606?text=Assalam-o-Alaikum%2C%20I%20am%20interested%20in%20Electrical%20Products.%20Please%20share%20price%20and%20availability."
-           target="_blank">
-          WhatsApp Enquiry
-        </a>
-      </div>
 
-      <div class="card">
-        <img src="images/mechanical.jpg" alt="Mechanical Products">
-        <h3>Mechanical Products</h3>
-        <p>
-          Pumps, valves, bearings, seals, flanges, shafts,
-          gears and mechanical components.
-        </p>
-        <a class="whatsapp-btn"
-           href="https://wa.me/923073284606?text=Assalam-o-Alaikum%2C%20I%20am%20interested%20in%20Mechanical%20Products.%20Please%20share%20price%20and%20availability."
-           target="_blank">
-          WhatsApp Enquiry
-        </a>
-      </div>
+<div class="product-page-grid">
 
-      <div class="card">
-        <img src="images/industrial.jpg" alt="Industrial Products">
-        <h3>Industrial Supplies</h3>
-        <p>
-          A wide range of industrial supplies and equipment
-          according to customer requirements.
-        </p>
-        <a class="whatsapp-btn"
-           href="https://wa.me/923073284606?text=Assalam-o-Alaikum%2C%20I%20am%20interested%20in%20Industrial%20Supplies.%20Please%20share%20price%20and%20availability."
-           target="_blank">
-          WhatsApp Enquiry
-        </a>
-      </div>
 
-    </div>
 
-  </div>
+<div class="catalog-card"
+data-category="industrial">
+
+<img
+src="assets/industrial/01_Industrial_MS_SS_Pipe_Fittings.png"
+alt="MS SS Pipe Fittings">
+
+<div class="catalog-body">
+
+<span class="tag">
+INDUSTRIAL
+</span>
+
+<h3>
+MS / SS PIPE & FITTINGS
+</h3>
+
+<p>
+MS and stainless-steel pipes, elbows,
+tees, reducers, couplings, flanges
+and related components.
+</p>
+
+<a
+class="product-content-link"
+href="contact.html">
+
+REQUEST QUOTE →
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="catalog-card"
+data-category="industrial">
+
+<img
+src="assets/industrial/02_Valves.png"
+alt="Industrial Valves">
+
+<div class="catalog-body">
+
+<span class="tag">
+INDUSTRIAL
+</span>
+
+<h3>
+INDUSTRIAL VALVES
+</h3>
+
+<p>
+Gate, globe, ball and butterfly-style
+valves for industrial applications.
+</p>
+
+<a href="contact.html">
+REQUEST QUOTE →
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="catalog-card"
+data-category="industrial">
+
+<img
+src="assets/industrial/03_Flow_Meters.png"
+alt="Flow Meters">
+
+<div class="catalog-body">
+
+<span class="tag">
+INSTRUMENTATION
+</span>
+
+<h3>
+FLOW METERS
+</h3>
+
+<p>
+Industrial flow measurement solutions
+for process applications.
+</p>
+
+<a href="contact.html">
+REQUEST QUOTE →
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="catalog-card"
+data-category="industrial">
+
+<img
+src="assets/industrial/04_Control_Valves.png"
+alt="Control Valves">
+
+<div class="catalog-body">
+
+<span class="tag">
+CONTROL
+</span>
+
+<h3>
+CONTROL VALVES
+</h3>
+
+<p>
+Control valve assemblies for accurate
+automatic process regulation.
+</p>
+
+<a href="contact.html">
+REQUEST QUOTE →
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="catalog-card"
+data-category="industrial">
+
+<img
+src="assets/industrial/05_Other_Instruments_Accessories.png"
+alt="Industrial Instruments">
+
+<div class="catalog-body">
+
+<span class="tag">
+INSTRUMENTATION
+</span>
+
+<h3>
+INSTRUMENTS & ACCESSORIES
+</h3>
+
+<p>
+Gauges, transmitters, sensors, probes,
+fittings and accessories.
+</p>
+
+<a href="contact.html">
+REQUEST QUOTE →
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="catalog-card"
+data-category="industrial">
+
+<img
+src="assets/industrial/06_Flanges_Bolts_Gaskets.png"
+alt="Flanges Bolts Gaskets">
+
+<div class="catalog-body">
+
+<span class="tag">
+PIPING
+</span>
+
+<h3>
+FLANGES, BOLTS & GASKETS
+</h3>
+
+<p>
+Industrial joining and sealing components
+for piping systems.
+</p>
+
+<a href="contact.html">
+REQUEST QUOTE →
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- SAFETY -->
+
+
+<div class="catalog-card"
+data-category="safety">
+
+<img
+src="assets/safety/01_Safety_Helmets.png"
+alt="Safety Helmets">
+
+<div class="catalog-body">
+
+<span class="tag">
+SAFETY
+</span>
+
+<h3>
+SAFETY HELMETS
+</h3>
+
+<p>
+Protective headgear for industrial
+and construction environments.
+</p>
+
+<a href="contact.html">
+REQUEST QUOTE →
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="catalog-card"
+data-category="safety">
+
+<img
+src="assets/safety/02_Safety_Gloves.png"
+alt="Safety Gloves">
+
+<div class="catalog-body">
+
+<span class="tag">
+SAFETY
+</span>
+
+<h3>
+SAFETY GLOVES
+</h3>
+
+<p>
+Hand protection for industrial and
+general workplace requirements.
+</p>
+
+<a href="contact.html">
+REQUEST QUOTE →
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="catalog-card"
+data-category="safety">
+
+<img
+src="assets/safety/03_Reflective_Jackets.png"
+alt="Reflective Jackets">
+
+<div class="catalog-body">
+
+<span class="tag">
+SAFETY
+</span>
+
+<h3>
+REFLECTIVE JACKETS
+</h3>
+
+<p>
+High-visibility workwear for industrial
+and construction sites.
+</p>
+
+<a href="contact.html">
+REQUEST QUOTE →
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="catalog-card"
+data-category="safety">
+
+<img
+src="assets/safety/04_Safety_Harness.png"
+alt="Safety Harness">
+
+<div class="catalog-body">
+
+<span class="tag">
+SAFETY
+</span>
+
+<h3>
+SAFETY HARNESS
+</h3>
+
+<p>
+Fall-protection equipment for
+elevated work applications.
+</p>
+
+<a href="contact.html">
+REQUEST QUOTE →
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="catalog-card"
+data-category="safety">
+
+<img
+src="assets/safety/05_Fire_Extinguishers.png"
+alt="Fire Extinguishers">
+
+<div class="catalog-body">
+
+<span class="tag">
+FIRE SAFETY
+</span>
+
+<h3>
+FIRE EXTINGUISHERS
+</h3>
+
+<p>
+Fire-fighting equipment and workplace
+protection solutions.
+</p>
+
+<a href="contact.html">
+REQUEST QUOTE →
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="catalog-card"
+data-category="safety">
+
+<img
+src="assets/safety/06_Goggles_Face_Shield.png"
+alt="Goggles Face Shield">
+
+<div class="catalog-body">
+
+<span class="tag">
+SAFETY
+</span>
+
+<h3>
+GOGGLES & FACE SHIELD
+</h3>
+
+<p>
+Eye and face protection for industrial
+work environments.
+</p>
+
+<a href="contact.html">
+REQUEST QUOTE →
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
 </section>
 
-<section class="section alt">
-  <div class="container">
 
-    <div class="section-title">
-      <small>Need Something?</small>
-      <h2>Looking for a specific product?</h2>
-      <p>
-        Contact OAG Services & Traders for product availability,
-        specifications and quotations.
-      </p>
-    </div>
 
-    <div style="text-align:center;">
-      <a class="whatsapp-btn"
-         href="https://wa.me/923073284606?text=Assalam-o-Alaikum%2C%20I%20would%20like%20to%20ask%20about%20your%20products.%20Please%20share%20details%20and%20quotation."
-         target="_blank">
-        WhatsApp Enquiry
-      </a>
-    </div>
+<footer>
 
-  </div>
-</section>
+<div class="container footer-grid">
 
-<footer class="footer">
-  <div class="container">
+<div>
 
-    <div class="footgrid">
+<h3>
+OAG SERVICES & TRADERS
+</h3>
 
-      <div>
-        <h4>OAG Services & Traders</h4>
-        <p>
-          General order supplier and industrial service provider
-          serving customers across Pakistan.
-        </p>
-      </div>
+<p>
+Your trusted source for industrial,
+electrical, mechanical and safety
+products and services.
+</p>
 
-      <div>
-        <h4>Quick Links</h4>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="clients.html">Clients</a>
-      </div>
+</div>
 
-      <div>
-        <h4>Contact</h4>
-        <p>
-          oagsat@gmail.com<br>
-          0307-3284606<br>
-          0301-7614607
-        </p>
-      </div>
 
-    </div>
+<div>
 
-    <div class="bottom">
-      © 2026 OAG Services & Traders. All rights reserved.
-    </div>
+<h4>
+QUICK LINKS
+</h4>
 
-  </div>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="industries.html">Industries</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+
+<div>
+
+<h4>
+PRODUCT CATEGORIES
+</h4>
+
+<a href="products.html">
+Industrial Products
+</a>
+
+<a href="products.html">
+Piping Products
+</a>
+
+<a href="products.html">
+Instrumentation
+</a>
+
+<a href="products.html">
+Safety Equipment
+</a>
+
+</div>
+
+
+<div>
+
+<h4>
+CONTACT
+</h4>
+
+<p>📞 0307-3284606</p>
+<p>📞 0301-7614607</p>
+<p>✉ oagsat@gmail.com</p>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 OAG Services & Traders.
+All Rights Reserved.
+
+</div>
+
 </footer>
 
-<script>
-document.querySelector('.menu').addEventListener('click', function() {
-  document.querySelector('.links').classList.toggle('open');
-});
-</script>
+
+
+<a
+href="https://wa.me/923073284606"
+class="whatsapp"
+target="_blank">
+
+☎
+
+</a>
+
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
-```
