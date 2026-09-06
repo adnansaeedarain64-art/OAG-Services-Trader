@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://adnansaeedarain64-art.github.io/OAG-Services-Trader/sitemap.xml
